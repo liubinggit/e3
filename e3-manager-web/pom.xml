@@ -7,13 +7,13 @@
 		<artifactId>e3-manager</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>e3-manager-web</artifactId>
+	<artifactId>e3-manager-parent</artifactId>
 	<packaging>war</packaging>
 	
 	<dependencies>
 		<dependency>
 			<groupId>com.liubing</groupId>
-			<artifactId>e3-manager-service</artifactId>
+			<artifactId>e3-manager-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<!-- JSP相关 -->
@@ -30,6 +30,35 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jsp-api</artifactId>
 			<scope>provided</scope>
+		</dependency>
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
 		</dependency>
 	</dependencies>
 </project>
